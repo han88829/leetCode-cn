@@ -1,1 +1,1 @@
-onreverse
+s.length - 1
