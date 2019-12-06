@@ -1,1 +1,1 @@
-s.length - 1
+res
