@@ -1,1 +1,3 @@
-res
+
+// @lc code=start
+/**
