@@ -17,19 +17,22 @@
  * @return {number}
  */
 var maxDepth = function (root) {
-    if (!root) return 0;
-    let dep = 0;
+    // if (!root) return 0;
+    // let dep = 0;
 
-    function getDep(data, dep) {
-        if (!data.left && !data.right) return dep + 1;
-        let left = data.left ? getDep(data.left, dep + 1) : dep + 1;
-        let right = data.right ? getDep(data.right, dep + 1) : dep + 1;
+    // function getDep(data, dep) {
+    //     if (!data.left && !data.right) return dep + 1;
+    //     let left = data.left ? getDep(data.left, dep + 1) : dep + 1;
+    //     let right = data.right ? getDep(data.right, dep + 1) : dep + 1;
 
-        return Math.max(left, right)
-    }
+    //     return Math.max(left, right)
+    // }
 
-    dep = getDep(root, 0);
-    return dep
+    // dep = getDep(root, 0);
+    // return dep
+
+
+    return !root ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1
 };
 // @lc code=end
 
